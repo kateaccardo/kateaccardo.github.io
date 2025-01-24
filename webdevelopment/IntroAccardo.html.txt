@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+               <meta charset="utf-8">
+               <title>Welcome to Kate Accardo's Website</title>
+</head>
+<body>
+
+     Hello! My name is Kate Accardo, and I am a Junior. I have no previous web application or development training or experience. My expectations for this course are to be able to understand how and why websites are created. To understand the best ways to advertise, design, and to promote engagement. I am a digital storytelling major, and with this course I hope to be able to apply things I have learned to my future career. Some of my hobbies consist of painting, playing guitar, and crafting. I love to travel and experience new things. In my free time I like to take photos, go on hikes, workout and spend time with my friends and family. 
+
+</body>
+</html>
