@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>Professional Portfolio   
-<style>
-div {
-    background-color:#8A8B94;
-    width: 70px;
-    height: 1px;
-    border: 10px solid #39546B;border-style: dotted;
-    padding: 15px;
-    margin: 10px;
-  }
-  body {
-  background: #D9A9A9;
-  border:10px solid #39546B;border-style: dotted;
-}
-</style>
-
-<!--
-
-Title: Professional Portfolio
-
-Use: Collection of Achievements
-
-Author: Kate Accardo
-
-School/Term: University of Missouri, Spring 2025
-
-Developed:2/11/2025
-
-Tested: 2/11/2025
-
--->
-               <meta charset="utf-8">
-               <title>About Me</title>
-               <h1>Kate Accardo</h1></head>
+<head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        div {
+            background-color: #8A8B94;
+            width: 70px;
+            height: 1px;
+            border: 10px dotted #39546B;
+            padding: 15px;
+            margin: 10px;
+        }
+        body {
+            background: #D9A9A9;
+            border: 10px dotted #39546B;
+        }
+    </style>
+</head>
 <body>
-   
-    <img src="Headshotcropped.jpeg" width="150" height="220"/><H1>About me!</H1>
-        <h3>My name is Kate Accardo. I am a student at the University of Missouri, studying Digital Storytelling, with a discipline in production, with an expected graduation date of May 2026.</h3>
-        <main><br>One of my favorite quotes that has strengthened my approach in work and life is by Jimmy Page:<br> 
-        <blockquote>“I’m attracted by the unknown, but I take precautions.”</blockquote> 
-        <p>This saying has thoroughly been prevalent in my life. I was born and raised in Kansas City, Missouri. On a personal level, I enjoy activities such as hiking, painting, and playing guitar. Most of my interests allow me to be creative and expand my horizons. I am always looking for new adventures and to meet new people. For example, I decided to move to Ireland straight out of college, and I lived there for two years. I am family-oriented, so this was a big step in my personal growth and <strong>individuality</strong>. I was fortunate enough to experience various countries and immerse myself in much more of the world. This put me completely out of my comfort zone and allowed me to experience many cultures. <u>Curiosity</u> and <u>creativity</u> led me to declare my major in Digital Storytelling. With this educational focus, I can create, inform, and create connections among a diverse audience.</p>
-<div>
-  <a href="AccardoResume.pdf.pdf">Resume</a>
-</div>
-</main>    
-<footer>
-    <p>Created by Kate Accardo | <a>kate7accardo@gmail.com</a></p>
-    <p>&copy;2025 Kate Accardo. All rights reserved.</p>
-</footer>
+    <nav>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="project.html" class="dropbtn">Experience</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Kate Accardo</h1>
+    
+    <img src="Headshotcropped.jpeg" width="150" height="220" alt="Kate Accardo Headshot">
+    
+    <h1>About Me!</h1>
+    
+    <h3>My name is Kate Accardo. I am a student at the University of Missouri, studying Digital Storytelling, with a discipline in production, with an expected graduation date of May 2026.</h3>
+    
+    <main>
+            <p>One of my favorite quotes that has strengthened my approach in work and life is by Jimmy Page:</p>
+            <blockquote>“I’m attracted by the unknown, but I take precautions.”</blockquote>
+            <p>This saying has thoroughly been prevalent in my life. I was born and raised in Kansas City, Missouri. On a personal level, I enjoy activities such as hiking, painting, and playing guitar. Most of my interests allow me to be creative and expand my horizons. I am always looking for new adventures and to meet new people.</p>
+            <p>For example, I moved to Ireland straight out of college and lived there for two years. I am family-oriented, so this was a big step in my personal growth and <strong>individuality</strong>. I was fortunate enough to experience various countries and immerse myself in much more of the world. This put me completely out of my comfort zone and allowed me to experience many cultures.</p>
+            <p><u>Curiosity</u> and <u>creativity</u> led me to declare my major in Digital Storytelling. With this educational focus, I can create, inform, and connect with a diverse audience.</p>
+
+        
+        <div>
+            <a href="AccardoResume.pdf">Resume</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Kate Accardo | <a href="mailto:kate7accardo@gmail.com">kate7accardo@gmail.com</a></p>
+        <p>&copy; 2025 Kate Accardo. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
