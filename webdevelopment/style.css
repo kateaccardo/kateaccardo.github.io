@@ -1,1 +1,23 @@
 h1 {color:#000000}
+body {
+    background: #D9A9A9;}
+
+.first-paragraph::first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+
+main p:not(.first-paragraph) {
+    text-indent: 2em;
+}
+
+.reflection-box {
+    padding: 20px;
+    background-color: rgb(192, 119, 119);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
