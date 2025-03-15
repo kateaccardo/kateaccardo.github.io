@@ -21,3 +21,16 @@ main p:not(.first-paragraph) {
     flex-direction: column;
     gap: 10px;
 }
+.centered-heading {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .text {
+    flex: 1;
+  }
+  
