@@ -8,7 +8,6 @@ body {
     font-family: 'Georgia', serif;
 }
 
-
 main p:not(.first-paragraph) {
     text-indent: 2em;
 }
