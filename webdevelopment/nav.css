@@ -1,6 +1,8 @@
   .topnav {
     overflow: hidden;
     background-color: #39546B;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
   .topnav a {
@@ -10,6 +12,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    clear: right;
   }
   
   .topnav a:hover {
@@ -72,4 +75,40 @@
     display: block;
     display: flex;
     flex-direction: column;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  cursor: pointer;
+}
+#toggle { 
+  display: none;
+}
+ 
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .topnav {
+    text-align: center;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+  .topnav a, .dropdown {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  #toggle:checked ~ .topnav {
+    display: flex;
+  }
+  .dropdown-content {
+    position:static;
+    width:100%;
+  }
 }
