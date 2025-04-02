@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Adjust weight as needed */
+    font-style: normal;
+}
 h1 {color:#000000}
 body {
     background: #D9A9A9;}
@@ -46,3 +54,80 @@ main p:not(.first-paragraph) {
     
 }
 
+media print {
+    /* Set all text to black and use a serif font */
+    body {
+        background: none; /* Remove background color for better printing */
+        color: black;
+        font-family: serif;
+        margin: 1in; /* Ensure 1-inch margins */
+        padding: 0;
+        line-height: 1.2; /* Adjust line height for better readability */
+    }
+
+    /* Apply black color to all required elements */
+    h1, h3, p, ul, ol, blockquote, footer {
+        color: black;
+    }
+
+    /* Ensure h1 prints with Montserrat */
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px; /* Slightly smaller for better fitting */
+    }
+
+    /* Adjust h3 for print */
+    h3 {
+        font-size: 16px; /* Reduce size for better fitting */
+    }
+
+    /* Adjust paragraph text for print */
+    p {
+        font-size: 12px; /* Slightly smaller for fitting */
+        line-height: 1.3;
+    }
+
+    /* Adjust list styling */
+    ul, ol {
+        font-size: 12px; /* Slightly smaller for better fitting */
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    /* Format blockquote */
+    blockquote {
+        font-style: italic;
+        font-size: 12px; /* Reduce size */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Footer styling (contact info only, no icons) */
+    footer {
+        font-size: 10px; /* Smaller font */
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Ensure content fits within a single page */
+    @page {
+        size: auto;
+        margin: 1in;
+    }
+
+    /* Specific content tweaks to avoid overflowing */
+    .container, .reflection-box, .text {
+        page-break-inside: avoid; /* Prevent content from breaking inside */
+    }
+
+    /* Ensure no large gaps between sections */
+    .container {
+        margin-top: 10px;
+    }
+
+    /* Make sure resume link fits */
+    .resume-link {
+        display: block;
+        margin-top: 10px;
+    }
+}
