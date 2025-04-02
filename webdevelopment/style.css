@@ -62,7 +62,7 @@ main p:not(.first-paragraph) {
         margin: 1in; 
         padding: 0;
         line-height: 1.2;
-        font-size: 17px;
+        font-size: 13px;
     }
     h1, h3, p, ul, ol, blockquote, footer {
         color: black;
