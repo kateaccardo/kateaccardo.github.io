@@ -33,7 +33,6 @@
 .dropdown {
   float: left;
   position: relative;
-  display: inline-block;
 }
 
 .dropbtn {
