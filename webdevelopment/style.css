@@ -96,4 +96,22 @@ footer img:hover {
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
 
+    .project-container video,
+    .project-container p {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-container video {
+        height: auto;
+    }
+}
