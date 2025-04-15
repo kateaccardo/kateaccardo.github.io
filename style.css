@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {color:#000000}
+body {
+    background: #D9A9A9;}
+
+.first-paragraph::first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+}
+
+main p:not(.first-paragraph) {
+    text-indent: 2em;
+}
+
+.reflection-box {
+    padding: 20px;
+    background-color: rgb(192, 119, 119);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.centered-heading {
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.headshotcropped.jpeg {
+    max-width: 150px; 
+    height: auto;
+    flex-shrink: 0;
+}
+
+.text {
+    flex: 1; 
+    box-sizing: border-box;
+    width: 100%
+    
+}
+
+@media print {
+    body {
+        background: none; 
+        color: black;
+        font-family: serif;
+        margin: 1in; 
+        padding: 0;
+        line-height: 1.2;
+        font-size: 13px;
+    }
+    h1, h3, p, ul, ol, blockquote, footer {
+        color: black;
+    }
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .topnav, 
+    iframe[src*="youtube.com"], 
+    img[src="Headshotcropped.jpeg"], 
+    .resume-link {
+        display: none;
+    }
+}
+
+footer {
+    background-image: url(images/footer-bg.jpg.png); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; 
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+footer img {
+    transition: transform 0.3s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width:1000px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .project-container video,
+    .project-container p {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-container video {
+        height: auto;
+    }
+}
+figure {
+    margin-left: 0;
+    padding-left: 0;  
+}
+table {
+    width: 103%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  thead th {
+    background-color: #39546B;
+  }
+  
+  tfoot td {
+    background-color: #39546B;
+
+  }
+  
+  tr:nth-child(even):not(:first-child):not(:last-child) {
+    background-color: #39546bae;
+  }
+  
+  tr:nth-child(odd):not(:first-child):not(:last-child) {
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 1000px) {
+    table, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+    
+    tr {
+      margin-bottom: 1rem;
+    }
+  
+    td::before {
+      font-weight: bold;
+      display: block;
+    }
+  
+    td:nth-of-type(1)::before { content: "Project Name: "; }
+    td:nth-of-type(2)::before { content: "Description: "; }
+    td:nth-of-type(3)::before { content: "Tools Used: "; }
+  }
+  
