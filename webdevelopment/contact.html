@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .contact-section {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #39546B;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(57, 84, 107, 0.2);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #476885bb;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #fff;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: rgb(192, 119, 119);
+            color: #39546B;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a34d4d;
+        }
+
+        input:invalid,
+        textarea:invalid {
+            border-color: red;
+            outline: none;
+        }
+
+        .required {
+            color: red;
+        }
+
+        .confirmation-message {
+            display: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .contact-section {
+                padding: 15px;
+                margin: 20px;
+            }
+        }
+    </style>
+        <script>
+            function showConfirmationMessage(event) {
+                event.preventDefault(); 
+                document.getElementById("confirmationMessage").style.display = "block";
+                document.querySelector("form").reset();
+            }
+        </script>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="toggle">
+        <label for="toggle">&#9776;</label>
+        <div class="media-info">
+            <h1 class="centered-heading">Kate Accardo</h1>
+        </div>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <div class="dropdown">
+                <a href="project.html" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="project.html#project1">Project 1</a>
+                    <a href="project.html#project2">Project 2</a>
+                    <a href="project.html#project3">Project 3</a>
+                </div>
+            </div>
+            <a href="Reflection.html">Reflection</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="contact-section">
+            <h2 class="centered-heading">Contact Me</h2>
+            <form action="mailto:kate7accardo@gmail.com" method="post" enctype="text/plain" onsubmit="showConfirmationMessage(event)">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="First Name" placeholder="First name" required autofocus>
+
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="Last Name" placeholder="Last name" required>
+
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="Email" placeholder="Email address" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="Subject" value="Portfolio/Professional Website Contact" readonly>
+
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea id="message" name="Message" placeholder="Type your message here..." required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+            <div id="confirmationMessage" class="confirmation-message">
+                Thank you for your message! It has been sent successfully.
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Kate Accardo | 
+            <img src="images/phone-icon.png.png" alt="Phone Icon" width="24" height="24"> 
+            <a href="tel:+19132636436">+1 913-263-6436</a> |
+            <img src="images/email-icon.png.png" alt="Email Icon" width="24" height="24"> 
+            <a href="mailto:kate7accardo@gmail.com">kate7accardo@gmail.com</a>
+        </p>
+        <p>&copy; 2025 Kate Accardo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
