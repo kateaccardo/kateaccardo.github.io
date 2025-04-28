@@ -52,7 +52,7 @@
   top: 100%;
   left: 0;
   background-color: #39546B;
-  min-width: 160px;
+  min-width: 100px;
   z-index: 1;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   flex-direction: column;
@@ -108,10 +108,15 @@ label {
     margin: 0;
     font-size: 19px;
   }
+  .topnav a, .dropbtn, .dropdown {
+    padding: 14px 0;
+  }
+  
   #toggle:checked ~ .topnav {
     display: flex;
   }
   .dropdown-content {
+    display: none;
     position:static;
     width:100%;
   }
@@ -132,4 +137,11 @@ label {
     box-sizing: border-box;
     font-size: 15px;
 }
+.dropdown-content {
+  display: none;
+}
+.dropdown:hover .dropdown-content {
+  display: none;
+}
+
 }
