@@ -161,7 +161,6 @@ table {
   
   tfoot td {
     background-color: #39546B;
-
   }
   
   tr:nth-child(even):not(:first-child):not(:last-child) {
@@ -176,10 +175,12 @@ table {
     table, th, td, tr {
       display: block;
       width: 100%;
+      text-align: center;
     }
     
     tr {
       margin-bottom: 1rem;
+    
     }
   
     td::before {
