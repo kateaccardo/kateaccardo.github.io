@@ -106,7 +106,7 @@ footer img:hover {
     transform: scale(1.2);
 }
 
-@media (max-width:1000px) {
+@media (max-width:600px) {
     .project-container {
         display: flex;
         flex-direction: column;
@@ -168,7 +168,7 @@ table {
     background-color: #ffffff;
   }
   
-  @media (max-width: 1000px) {
+  @media (max-width: 600px) {
     table, th, td, tr {
       display: block;
       width: 100%;
