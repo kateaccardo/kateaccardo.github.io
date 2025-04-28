@@ -86,6 +86,7 @@ main p:not(.first-paragraph) {
     .resume-link {
         display: none;
         }
+        
 
 }
 
@@ -124,6 +125,9 @@ footer img:hover {
     .project-container video {
         height: auto;
     }
+    .video-container video {
+    width:80%;
+}
 }
 figure {
     margin-left: 0;
