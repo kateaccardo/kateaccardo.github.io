@@ -147,6 +147,8 @@ table {
     margin-top: 1rem;
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   th, td {
@@ -175,6 +177,10 @@ table {
     table {
       border-collapse: collapse;
       width: 100%;
+      margin-left: 20px;
+    }
+    thead {
+        display: none;
     }
   
     tr {
