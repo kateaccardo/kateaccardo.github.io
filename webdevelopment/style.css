@@ -39,7 +39,8 @@ main p:not(.first-paragraph) {
 .centered-heading {
     text-align: center;
     font-size: 48px;
-    text-decoration:underline
+    text-decoration:underline;
+    margin-top: 90px;
   }
   .container {
     display: flex;
@@ -182,7 +183,6 @@ table {
     thead {
         display: none;
     }
-  
     tr {
       display: table-row;
       width: 100%;
