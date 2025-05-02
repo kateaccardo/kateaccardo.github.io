@@ -20,6 +20,17 @@
     .reflection-box{
         margin-bottom: 200px;
     }
+    .counter-box {
+      border: 2px solid #333;
+      padding: 5px 5px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
 </style>
 </head>
 <body>
@@ -60,6 +71,19 @@
         <img src="images/email-icon.png.png" alt="Email Icon" width="24" height="24"> 
         <a href="mailto:kate7accardo@gmail.com">kate7accardo@gmail.com</a>
     </p>
+    <div class="counter-box">
+        <p>You have navigated this site <span id="visit-count">0</span> times.</p>
+    </div>
+        <script>
+          if (localStorage.getItem('page_view')) {
+            let count = parseInt(localStorage.getItem('page_view')) + 1;
+            localStorage.setItem('page_view', count);
+            document.getElementById('visit-count').textContent = count;
+          } else {
+            localStorage.setItem('page_view', 1);
+            document.getElementById('visit-count').textContent = 1;
+          }
+        </script>
     <p>&copy; 2025 Kate Accardo. All rights reserved.</p>
 </footer>
 </body>
