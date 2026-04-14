@@ -8,24 +8,9 @@
     <link rel="stylesheet" href="nav.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    Title: B-Roll
-    Use: B-Roll Image Showcase
-    Author: Kate Accardo
-    School/Term: University of Missouri, Spring 2025
-    Developed: 4/14/2026
-    Tested: 4/14/2026
-    -->
 
 <style>
-  .reflection-box{
-      margin-top: 60px;
-      margin-bottom: 60px;
-      max-width: 900px;
-  }
-
   .image-container {
-      display: block; /* forces stacking */
       text-align: center;
   }
 
@@ -34,20 +19,25 @@
       width: 100%;
       max-width: 1000px;
       height: auto;
-      margin: 0 auto 30px auto; /* space between images */
+      margin: 0 auto 30px auto;
       border-radius: 8px;
+  }
+
+  .reflection-box {
+      max-width: 900px;
+      margin: 60px auto; /* THIS centers the box */
+      text-align: center; /* optional: centers text inside */
   }
 
   .counter-box {
       border: 2px solid #333;
-      padding: 5px 5px;
+      padding: 5px;
       border-radius: 8px;
       text-align: center;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
       width: 300px;
       display: inline-block;
-      margin-bottom: 10px;
-      margin-top: 10px;
+      margin: 10px;
   }
 </style>
 </head>
@@ -78,26 +68,21 @@
     </div>
 
     <main>
-
         <section id="broll">
-            <h2>B-Roll</h2>
+            <h2 style="text-align:center;">B-Roll</h2>
 
             <div class="image-container">
-                <!-- REPLACE WITH YOUR FILES -->
                 <img src="broll1.jpg" alt="B-Roll Image 1">
                 <img src="broll2.jpg" alt="B-Roll Image 2">
             </div>
 
-            <!-- ONE shared caption box -->
             <div class="reflection-box">
                 <p>
-                Write your reflection here about both images. You can discuss how these B-roll shots
-                contribute to your film, the tone they create, or why you chose these particular visuals.
-                This section connects both images into one cohesive idea.
+                Write your reflection here about both images. This text box is now centered and aligned
+                with the images above, creating a clean and balanced layout.
                 </p>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -125,6 +110,5 @@
 
         <p>&copy; 2025 Kate Accardo. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
